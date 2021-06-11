@@ -1,0 +1,242 @@
+/* Linked a google font 'Baloo Bhai 2' from net using link and then used that in whole body  */
+body
+{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* Setting color of Navbar text white and making it transition from white to red using hover property  */
+.H{
+    color:white;
+    transition:color 1s ease-in-out .2s;
+}
+.H:hover
+{
+    color:rgb(255, 44, 44);
+    text-decoration:underline;
+}
+
+/* Setting width of logo and moving text of nav bar from logo  */
+.logo{
+    width:50px;
+    margin-right: 60px;
+}
+/* setting those cards such that they are aligned row-wise if screen width>750 and in column wise if<750 */
+@media only screen and (min-width:1200px){
+.container{
+    padding-top: 20px;
+    position: relative;
+    left:100px;
+}
+.carousel-item
+{
+    height:80vh;
+}
+.carousel-item img
+{
+    background-position: center;
+}
+}
+@media only screen and (max-width:750px){
+    .container
+    {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+}
+@media only screen and (max-width:500px){
+    .container
+    {
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+    }
+    .carousel-caption
+    {
+        display:none;
+    }
+    .carousel-item img
+    {
+        height:60vh;
+    }
+}
+.pjp{
+    height:190px;
+}
+.j{
+    margin: 0px;
+    padding: 0px;
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+}
+@media only screen and (min-width:750px){
+/* media query for the background image + text +n.jpg to appear only for >750px width greater */
+.Features{
+    width:100vw;
+    height: 105vh;
+    background-image: url('../attachments/pa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    color: white;
+    /* setting image pa.jpg which is background for class called Features */
+}
+
+.Imags{
+    height: 45vh;
+    width:20vw;
+    /* set image n.jpg height and width */
+}
+.Imag
+{
+    position: relative;
+    top:60vh;
+    /* set Image n.jpg such that it hangs down */
+    margin-left: 12vw; 
+    /* Margin from left to make the image to shift right side */
+}
+.Rem
+{
+    position: relative;
+    width:60vw;
+    /* For shifting right side using position relative*/
+    left:35vw;
+    text-align: center;
+    /* For aligning items center and making text middle */
+}
+}
+.card:hover
+{
+    box-shadow: -2px 2px 2px 2px rgba(243, 168, 69, 0.678), 2px -2px 2px 2px rgba(174, 238, 90, 0.678);
+}
+@media only screen and (max-width:750px){
+
+    .Features{
+        width:100vw;
+        height: 90vh;
+        background-image: url(../attachments/pa.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+        color: white;
+    } 
+    .Rem 
+    {
+        position: relative;
+        text-align: center;
+        top:40vh;
+        font-size: 10px;
+    }
+    .Imags
+    {
+        display: none;
+    }
+}
+@media only screen and (min-width:750px){
+    
+.Feature2
+{
+    align-items: center;
+    padding-left: 9vw;
+    height: 70vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+.Feature2text
+{
+    position: relative;
+    margin-right: 2vw;
+    width:40vw;
+}
+.Feature2 img
+{
+    width:47vw;
+    height: 70vh;
+}
+}
+@media only screen and (max-width:750px){
+    .Feature2 img
+    {
+        display: none;
+    }
+    .Feature2{
+    height: 80vh;
+    }
+    .Feature2text
+    {
+        background-image: url('../attachments/gg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        text-align: center;
+        padding-top: 20vh;
+        color:black;
+        /* padding-bottom: 10vh; */
+    }
+}
+.End
+{
+    width:100vw;
+    height:90vh;
+    padding-top: 1vh;
+    background-image: url('../attachments/kk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.lbtn
+{
+    position: relative;
+    top:32vh;
+    border-radius: 10px;
+    height: 5vh;
+}
+@media only screen and (max-width:500px){
+    .End p
+    {
+        color:rgb(248, 248, 245);
+        position: relative;
+        top:29vh;
+        font-size: 2vh;
+    }   
+}
+@media only screen and (max-width:900px) and (min-width:500px){
+    .End p
+    {
+        color:rgb(248, 248, 245);
+        position: relative;
+        top:29vh;
+        font-size: 3vh;
+    }   
+}
+@media only screen and (min-width:950px){
+    .End p
+    {
+        color:rgb(248, 248, 245);
+        position: relative;
+        top:31vh;
+        font-size: 4vh;
+    }   
+}
+.lbtn a
+{
+    color: white;
+   text-decoration: none;
+}
+.MyRights
+{
+    width:100vw;
+    text-align: center;
+    color:rgba(4, 4, 5, 0.959);
+}
+.C
+{
+    color:rgb(14, 13, 13);
+    transition: color 2s ease-in-out 0.2s;
+}
+.C:hover
+{
+    color: rgba(29, 212, 236, 0.911);
+    text-decoration: underline;
+}

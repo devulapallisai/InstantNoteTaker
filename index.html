@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InstantNotes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="SearchTextHere">
+    <!-- This is for navbar along with a dropdown 'More about us'  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid" style="font-family: 'Baloo Bhai 2', cursive;">
+        <a href="index.html"><img class="logo" src="attachments/download.jpg" alt="Logo Here"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: 'Baloo Bhai 2', cursive;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><span class="H">Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html"><span class="H">Our Services</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Note.html"><span class="H">Create Notes</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"><span class="H">More About Us</span></a>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-family: 'Baloo Bhai 2', cursive;">
+                <li><a class="dropdown-item" href="about.html">Support us</a></li>
+                <li><a class="dropdown-item" href="about.html">Why this notes</a></li>
+                <li><a class="dropdown-item" href="Suggest.html">Suggest Us</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- For slider and image shower along with the approprimate text and images  -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img style="background-position: center ;background-size: cover;" src="attachments/1.jpg"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block my-2" style="color: black;opacity: 1;text-align: center;">
+            <h1>Create Your First Note</h1>
+            <a href="Note.html"><button class="btn btn-outline-success" type="submit">Get Started</button></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="attachments/cool.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block  my-2" style="color: black;opacity: 1;">
+            <h1><b>Create your first note simply</b></h1>
+            <p>Presenting most Unique Notemaker where you can use this for creating notes and saving it in local server
+              to
+              access whenever you require.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="attachments/slid.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block my-2" style="color: black;opacity: 1;">
+            <h1>Your Safety-Our Responsibility</h1>
+            <p>Here You can type anything you want and special feauture about this is we keep your files safe and secure
+              and it is our responsibility that your data will be private and can be recoverable if you delete in 50days
+              after deletion.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" style="color: black;"
+        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- These are for inserting cards that are taken from bootstrap and inserting apprprimate images and text  -->
+    <div class="container" style="display:flex;">
+      <div class="card m-2" style="width: 18rem;font-family:'Baloo Bhai 2', cursive;">
+        <img class="pjp" src="attachments/ff.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Day to day lifestyle is changing and same with Technology. Join us and create your
+            <b>Digital Note</b> now. Just create it type it and save it.
+          </p>
+        </div>
+      </div>
+      <div class="card m-2" style="width: 18rem;font-family:'Baloo Bhai 2', cursive;">
+        <img class="pjp" src="attachments/ll.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Your notes are organised and data kept safe and you can search your notes specifically
+            what
+            you want and can <b>mark important</b> along with many other features. </b></p>
+        </div>
+      </div>
+      <div class="card m-2" style="width: 18rem;font-family:'Baloo Bhai 2', cursive;">
+        <img class="pjp" src="attachments/p.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><b>Fast access of your notes using our search</b> and <b>Grammarly</b> is supported to
+            that
+            text with free subscription while you add text.
+        </div>
+      </div>
+    </div>
+    <!-- This is for the first Feature description (Reminder) -->
+    <div class="Features">
+      <div class="Imag"><img class="Imags" src="attachments/n.jpg" alt=""></div>
+      <!-- For inserting image  -->
+      <div class="Rem">
+        <h1>Share your thoughts with friends and your family members</h1>
+        <p>Next time you go to shopping or market/something get reminder from notes after saving content you want to buy
+          in the
+          market. Also check your beloved ones Birthdays and all after saving them in notes to avoid warnings.There
+          comes the first feature <b>Reminder</b>. Search for check something in the search box.</p>
+      </div>
+    </div>
+    <div class="d-flex Feature2">
+      <div class="Feature2text">
+        <h1>Don't Stop Writing at any case using our notes.</h1>
+        When you are outside and having your phone or while travelling without any notes with you carrying and in case
+        you
+        want to notedown the urgent information which is needed and our notes serves the purpose.There comes our second
+        feature <b>'Writing in need'</b>.
+      </div>
+      <div>
+        <img src="attachments/No.jpg" alt="Notes image">
+      </div>
+    </div>
+    <div class="End">
+      <p>Do create your own library of notes using our Notes.Don't stop your writing at any event or any time even you don't have notes. Get started with the below button and write your own thoughts and description about events and whatever you want but don't stop your writing at any cost.
+      </p>
+      <button class="lbtn btn-primary"><a href="Note.html">Create Your First Note</a></button>
+    </div>
+    <div class="MyRights">
+      This project is done by Sai Prachodhan Devulapalli and whole copyRights &#169; belongs to me
+      <div>
+        For any other information or support please contact us <a style="text-decoration: none;"
+          href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRsnxJgfQNndXcMgccXddKKNtsqkctCrHWSsqRBPPlSCjBKjskJlpbrQfGdrXlqWtBCXJcL">
+          <email class="C">devulapallisaiprachodhan26@gmail.com</email></a>
+        </div>
+    </div>
+</div>
+</body>
+<script src=" javascript/index.js">
+</script>
+
+</html>

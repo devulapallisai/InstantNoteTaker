@@ -1,0 +1,86 @@
+.logo{
+    width:50px;
+    margin-right: 60px;
+}
+body
+{
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: rgb(233, 222, 165);
+}
+.back
+{
+    font-family: 'Montserrat', sans-serif;
+}
+.H{
+    color:white;
+    transition:color 0.9s ease-in-out .3s;
+}
+.H:hover
+{
+    color:rgb(255, 44, 44);
+    text-decoration:underline;
+}
+.back::before{
+    content:"";
+    top:0;
+    left:0;
+    position: absolute;
+    background:url('../attachments/aa.jpg') no-repeat center center/cover;
+    opacity: 0.3;
+    width:100%;
+    height:100%;
+    z-index: -1;
+}
+.form-control
+{
+    text-align: center;
+}
+.container
+{
+   padding-top: 4vh;
+}
+@media only screen and (min-width:1200px) {
+    
+    .quote-end
+    {
+        font-weight: bolder;
+        position:absolute;
+        right:50vh;
+    }
+}
+@media only screen and (max-width:1200px) and (min-width:770px) {
+    
+    .quote-end
+    {
+        font-weight: bolder;
+        position:absolute;
+        right:30vh;
+    }
+}
+@media only screen and (max-width:770px) and (min-width:340px) {
+    
+    .quote-end
+    {
+        font-weight: bolder;
+        position:absolute;
+        right:15vh;
+    }
+}
+@media only screen and (max-width:340px) {
+    
+    .quote-end
+    {
+        font-weight: bolder;
+        position:absolute;
+        right:5vh;
+    }
+}
+.text 
+{
+    padding-top: 5vh;
+}
+.hl
+{
+    text-align:center;
+    font-weight: bold;
+}
