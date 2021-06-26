@@ -11,9 +11,10 @@
 
 6.If you added many notes then you can search what note you want by searching it in Search of Note.html
 
-7.While you are typing in search you can see what notes are having the word(s) you are searching by title and also by notes you added using "Regex" so it can search even it matches 
-with capitals also.
+7.While you are typing in search you can see what notes are having the word(s) you are searching by title and also by notes you added using "Regex" so it can search even it matches with capitals also.
 
 8.You can delete note by clicking "Delete Note" once you added a note.
 
 9.You can also "Mark Important" By clicking the checkbox before clicking on "Addnote" as you give title and text so that you note will be displayed red.
+
+10.I have been looking into creating a Chrome extension which on installed includes "InstantNotetaker" in context menu of Google chrome and when ever you want to copy paste some important text you can directly open website in new tab just on clicking "InstantNotetaker" in contextmenu of browser.(manifest.json and background.js some others are related to that).
