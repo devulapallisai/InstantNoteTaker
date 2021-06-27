@@ -4,14 +4,14 @@
     "manifest_version": 2,
     "description": "A simple website to take instant notes with basic search and mark important properties.",
     "icons": {
-        "128": "icon128.png",
-        "48": "icon48.png",
+        "100": "icon100.png",
+        "60": "icon60.png",
         "16": "icon16.png"
     },
     "browser_action": {
         "default_icons": {
-            "128": "icon128.png",
-            "48": "icon48.png",
+            "100": "icon100.png",
+            "60": "icon60.png",
             "16": "icon16.png"
         }
     },
