@@ -17,4 +17,4 @@
 
 9.You can also "Mark Important" By clicking the checkbox before clicking on "Addnote" as you give title and text so that you note will be displayed red.
 
-10.I have been looking into creating a Chrome extension which on installed includes "InstantNotetaker" in context menu of Google chrome and when ever you want to copy paste some important text you can directly open website in new tab just on clicking "InstantNotetaker" in contextmenu of browser.(manifest.json and background.js some others are related to that).
+10.I have also done a Chrome extension which on installed includes "InstantNotetaker" in context menu of Google chrome and when ever you want to copy paste some important text you can directly open website in new tab just on clicking "InstantNotetaker" in contextmenu of browser.(manifest.json and background.js some others are related to that).
