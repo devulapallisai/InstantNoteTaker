@@ -2,6 +2,7 @@
 body
 {
     font-family: 'Baloo Bhai 2', cursive;
+    overflow-x:hidden;
 }
 /* Setting color of Navbar text white and making it transition from white to red using hover property  */
 .H{
