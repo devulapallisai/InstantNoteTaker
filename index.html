@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <div class="SearchTextHere">
+  <div class="SearchTextHere" id="navi">
     <!-- This is for navbar along with a dropdown 'More about us'  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid" style="font-family: 'Baloo Bhai 2', cursive;">
@@ -74,7 +74,7 @@
             class="d-block w-100" alt="...">
           <div class="carousel-caption d-md-block my-2" style="color: black;opacity: 1;text-align: center;">
             <h1>Create Your First Note</h1>
-            <a href="Note.html"><button class="btn btn-outline-success" type="submit">Get Started</button></a>
+            <button class="btn btn-outline-success" onclick="myfunction()" type="submit">Get Started</button>
           </div>
         </div>
         <div class="carousel-item">
@@ -109,7 +109,7 @@
     </div>
 
     <!-- These are for inserting cards that are taken from bootstrap and inserting apprprimate images and text  -->
-    <div class="container" style="display:flex;">
+    <div class="container" id="Gohere" style="display:flex;">
       <div class="card m-2" style="width: 18rem;font-family:'Baloo Bhai 2', cursive;">
         <img class="pjp" src="attachments/ff.jpg" class="card-img-top" alt="...">
         <div class="card-body">
