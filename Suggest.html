@@ -74,31 +74,64 @@
                     mistakes and also please share this (if possible with your friends) and please do support me.
                 </div>
             </div>
-            <div class="my-4">
-                <label for="exampleFormControlInput1email" class="form-label">Your Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1email"
-                    placeholder="Enter your email example: name@example.com">
-            </div>
-            <div class="mb-4">
-                <label for="exampleFormControlInput1name" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1name"
-                    placeholder="Enter your name please">
-            </div>
-            <div class="mb-4">
-                <label for="exampleFormControlTextarea1" class="form-label">Your Suggestions/Complaints</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-            </div>
-            <div class="mb-4">
-                <label for="exampleFormControlcontact" class="form-label">Your Contact number</label>
-                <input type="text" class="form-control" id="exampleFormControlcontact"
-                    placeholder="Enter your name please">
-            </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-
+            <form id="contact" onsubmit="return postToGoogle();">
+                <div class="my-4">
+                    <label for="exampleFormControlInput1email" class="form-label">Your Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1email"
+                        placeholder="Enter your email example: name@example.com" name="entry.607985395" id="Name">
+                </div>
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1name" class="form-label">Your Name</label>
+                    <input type="text" id="Email" class="form-control" id="exampleFormControlInput1name"
+                        placeholder="Enter your name please" name="entry.1601549207">
+                </div>
+                <div class="mb-4">
+                    <label for="exampleFormControlTextarea1" class="form-label">Your Suggestions/Complaints</label>
+                    <textarea id="Phone" class="form-control" id="exampleFormControlTextarea1" rows="6"
+                        name="entry.1697246419"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="exampleFormControlcontact" class="form-label">Your Contact number</label>
+                    <input type="text" id="Message" class="form-control" id="exampleFormControlcontact"
+                        placeholder="Enter your name please" name="entry.1654488381">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        function postToGoogle() {
+            var field1 = $("#Name").val();
+            var field2 = $("#Email").val();
+            var field3 = $("#Phone").val();
+            var field4 = $("#Message").val();
+
+            $.ajax({
+                url: "{your_formResponse_url_goes_here}",
+
+                //add your google form generated numbers below which are also the 'names' of your inputs     
+                data: {
+                    "entry.607985395": field1,
+                    "entry.1601549207": field2,
+                    "entry.1697246419": field3,
+                    "entry.1654488381": field4
+                },
+                type: "POST",
+                dataType: "xml",
+                success: function (d) {
+                    $('#contact').trigger('reset');
+                },
+                error: function (x, y, z) {
+                    $('#contact').trigger('reset');
+                }
+            });
+            return false;
+        }
+    </script>
 </body>
 
 </html>
