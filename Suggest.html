@@ -17,6 +17,25 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/stylesuggest.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/17871/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -74,64 +93,33 @@
                     mistakes and also please share this (if possible with your friends) and please do support me.
                 </div>
             </div>
-            <form id="contact" onsubmit="return postToGoogle();">
+            <form id="myForm">
                 <div class="my-4">
                     <label for="exampleFormControlInput1email" class="form-label">Your Email address</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1email"
-                        placeholder="Enter your email example: name@example.com" name="entry.607985395" id="Name">
+                        placeholder="Enter your email example: name@example.com" id="Name" name="Your Email address">
                 </div>
                 <div class="mb-4">
                     <label for="exampleFormControlInput1name" class="form-label">Your Name</label>
-                    <input type="text" id="Email" class="form-control" id="exampleFormControlInput1name"
-                        placeholder="Enter your name please" name="entry.1601549207">
+                    <input type="text" id="Email" class="form-control" id="exampleFormControlInput1name" name="Your Name"
+                        placeholder="Enter your name please">
                 </div>
                 <div class="mb-4">
                     <label for="exampleFormControlTextarea1" class="form-label">Your Suggestions/Complaints</label>
-                    <textarea id="Phone" class="form-control" id="exampleFormControlTextarea1" rows="6"
-                        name="entry.1697246419"></textarea>
+                    <textarea id="Phone" class="form-control" name="Your Suggestions/Complaints" id="exampleFormControlTextarea1" rows="6"
+                    ></textarea>
                 </div>
                 <div class="mb-4">
                     <label for="exampleFormControlcontact" class="form-label">Your Contact number</label>
-                    <input type="text" id="Message" class="form-control" id="exampleFormControlcontact"
-                        placeholder="Enter your name please" name="entry.1654488381">
-                </div>
-                <div class="col-auto">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <input type="text" id="Message" class="form-control" name="Your Contact number" id="exampleFormControlcontact"
+                        placeholder="Enter your contact number">
                 </div>
             </form>
+            <!-- <div class="col-auto"> -->
+                <button class="btn btn-primary" onclick='SubForm()'>Submit</button>
+            <!-- </div> -->
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script>
-        function postToGoogle() {
-            var field1 = $("#Name").val();
-            var field2 = $("#Email").val();
-            var field3 = $("#Phone").val();
-            var field4 = $("#Message").val();
-
-            $.ajax({
-                url: "{your_formResponse_url_goes_here}",
-
-                //add your google form generated numbers below which are also the 'names' of your inputs     
-                data: {
-                    "entry.607985395": field1,
-                    "entry.1601549207": field2,
-                    "entry.1697246419": field3,
-                    "entry.1654488381": field4
-                },
-                type: "POST",
-                dataType: "xml",
-                success: function (d) {
-                    $('#contact').trigger('reset');
-                },
-                error: function (x, y, z) {
-                    $('#contact').trigger('reset');
-                }
-            });
-            return false;
-        }
-    </script>
 </body>
 
 </html>
