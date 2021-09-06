@@ -51,7 +51,7 @@ function shownotes() {
             html += `<div class="card Notecard mx-2 my-2">
         <div class="card-body">
         <h5 class="card-title">${notesObj[i]}</h5>
-        <p class="card-text">${notesObj[i + 1]}</p>
+        <pre class="card-text">${notesObj[i + 1]}</pre>
         <button id="${i}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
         </div>
         </div>`
@@ -61,7 +61,7 @@ function shownotes() {
             ;color:white">
         <div class="card-body">
         <h5 class="card-title">${notesObj[i]}</h5>
-        <p class="card-text">${notesObj[i + 1]}</p>
+        <pre class="card-text">${notesObj[i + 1]}</pre>
         <button id="${i}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
         </div>
         </div>`
