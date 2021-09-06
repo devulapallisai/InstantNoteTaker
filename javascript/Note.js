@@ -28,7 +28,7 @@ addbtn.addEventListener("click", function (e) {
         //Refer to cwh video on localstorage and sessionstroage for storing objects in localstorage
         addtext.value = "";
         addtitle.value = "";
-        markornot.checked="false";
+        markornot.checked=false;
     }
     else alert('Please do enter NON-EMPTY title and text so that you can search it later with that text and title.');
     shownotes();
