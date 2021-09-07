@@ -17,25 +17,8 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/stylesuggest.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script
-		src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		crossorigin="anonymous"></script>
-	<script>
-		function SubForm (){
-			$.ajax({
-				url:"https://api.apispreadsheets.com/data/17871/",
-				type:"post",
-				data:$("#myForm").serializeArray(),
-				success: function(){
-					alert("Form Data Submitted :)")
-				},
-				error: function(){
-					alert("There was an error :(")
-				}
-			});
-		}
-	</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -101,25 +84,41 @@
                 </div>
                 <div class="mb-4">
                     <label for="exampleFormControlInput1name" class="form-label">Your Name</label>
-                    <input type="text" id="Email" class="form-control" id="exampleFormControlInput1name" name="Your Name"
-                        placeholder="Enter your name please">
+                    <input type="text" id="Email" class="form-control" id="exampleFormControlInput1name"
+                        name="Your Name" placeholder="Enter your name please">
                 </div>
                 <div class="mb-4">
                     <label for="exampleFormControlTextarea1" class="form-label">Your Suggestions/Complaints</label>
-                    <textarea id="Phone" class="form-control" name="Your Suggestions/Complaints" id="exampleFormControlTextarea1" rows="6"
-                    ></textarea>
+                    <textarea id="Phone" class="form-control" name="Your Suggestions/Complaints"
+                        id="exampleFormControlTextarea1" rows="6"></textarea>
                 </div>
                 <div class="mb-4">
                     <label for="exampleFormControlcontact" class="form-label">Your Contact number</label>
-                    <input type="text" id="Message" class="form-control" name="Your Contact number" id="exampleFormControlcontact"
-                        placeholder="Enter your contact number">
+                    <input type="text" id="Message" class="form-control" name="Your Contact number"
+                        id="exampleFormControlcontact" placeholder="Enter your contact number">
                 </div>
             </form>
             <!-- <div class="col-auto"> -->
-                <button class="btn btn-primary" onclick='SubForm()'>Submit</button>
+            <button class="btn btn-primary" onclick='SubForm()'>Submit</button>
             <!-- </div> -->
         </div>
     </div>
+    <script>
+        function SubForm() {
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/17871/",
+                type: "post",
+                data: $("#myForm").serializeArray(),
+                success: function () {
+                    document.getElementById("myForm").reset();
+                    alert('Your Data Entry Success :)')
+                },
+                error: function () {
+                    alert("There was an error :(")
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
