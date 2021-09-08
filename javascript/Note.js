@@ -77,7 +77,7 @@ function shownotes() {
     else noteselem.innerHTML = ` <div class="card" id="Note">
     <div class="card-body">
     <h5 class="card-title">You have no note added.</h5>
-    <p class="card-text">Please click the following button to try your first note. Just add title and text you want and press the button Add note to save your first note or else click the following button to start with you first note.</p>
+    <pre class="card-text">Please click the following button to try your first note. Just add title and text you want and press the button Add note to save your first note or else click the following button to start with you first note.</pre>
     <a href="#" class="btn btn-primary">Get Started</a>
     </div>
     </div>`
@@ -108,7 +108,7 @@ search.addEventListener("input", function () {
     //using regular expressions in javascript to modify search so that it works for cse-insensitive too
     let noteCards = document.getElementsByClassName('Notecard');
     Array.from(noteCards).forEach(function (element) {
-        let cardTxt = element.getElementsByTagName("p")[0].innerText;
+        let cardTxt = element.getElementsByTagName("pre")[0].innerText;
         let cardhTxt = element.getElementsByTagName("h5")[0].innerText;
         if (str.exec(cardTxt) || str.exec(cardhTxt)) {
             element.style.display = "block";
