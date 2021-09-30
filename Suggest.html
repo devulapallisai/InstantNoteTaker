@@ -76,11 +76,11 @@
                     mistakes and also please share this (if possible with your friends) and please do support me.
                 </div>
             </div>
-            <form id="myForm">
+            <form id="myForm" action="/">
                 <div class="my-4">
                     <label for="exampleFormControlInput1email" class="form-label">Your Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1email"
-                        placeholder="Enter your email example: name@example.com" id="Name" name="Your Email address">
+                    <input type="email" class="form-control" id="exampleFormControlInput1email name"
+                        placeholder="Enter your email example: name@example.com" name="Your Email address" required>
                 </div>
                 <div class="mb-4">
                     <label for="exampleFormControlInput1name" class="form-label">Your Name</label>
@@ -99,24 +99,25 @@
                 </div>
             </form>
             <!-- <div class="col-auto"> -->
-            <button class="btn btn-primary" onclick='SubForm()'>Submit</button>
+            <input class="btn btn-secondary" type="submit" onclick='SubForm()'></input>
             <!-- </div> -->
         </div>
     </div>
     <script>
+        let d = document.getElementById('name');
         function SubForm() {
-            $.ajax({
-                url: "https://api.apispreadsheets.com/data/17871/",
-                type: "post",
-                data: $("#myForm").serializeArray(),
-                success: function () {
-                    document.getElementById("myForm").reset();
-                    alert('Your Data Entry Success :)')
-                },
-                error: function () {
-                    alert("There was an error :(")
-                }
-            });
+                $.ajax({
+                    url: "https://api.apispreadsheets.com/data/17871/",
+                    type: "post",
+                    data: $("#myForm").serializeArray(),
+                    success: function () {
+                        document.getElementById("myForm").reset();
+                        alert('Your Data Entry Success :)')
+                    },
+                    error: function () {
+                        alert("There was an error :(")
+                    }
+                });
         }
     </script>
 </body>

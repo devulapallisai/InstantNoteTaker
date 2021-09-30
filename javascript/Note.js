@@ -25,7 +25,6 @@ addbtn.addEventListener("click", function (e) {
             notesObj.push(0);
         }
         localStorage.setItem("notes", JSON.stringify(notesObj));
-        //Refer to cwh video on localstorage and sessionstroage for storing objects in localstorage
         addtext.value = "";
         addtitle.value = "";
         markornot.checked=false;
