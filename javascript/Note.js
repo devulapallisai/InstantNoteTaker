@@ -50,7 +50,7 @@ function shownotes() {
             html += `<div class="card Notecard mx-2 my-2">
         <div class="card-body">
         <h5 class="card-title">${notesObj[i]}</h5>
-        <pre class="card-text">${notesObj[i + 1]}</pre>
+        <div class="card-text" style="overflow-x:hidden;">${notesObj[i + 1]}</div>
         <button id="${i}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
         </div>
         </div>`
