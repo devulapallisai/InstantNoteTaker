@@ -50,7 +50,7 @@ function shownotes() {
             html += `<div class="card Notecard mx-2 my-2">
         <div class="card-body">
         <h5 class="card-title">${notesObj[i]}</h5>
-        <div class="card-text" style="overflow-x:hidden;">${notesObj[i + 1]}</div>
+        <pre class="card-text" style="overflow-x:hidden;">${notesObj[i + 1]}</pre>
         <button id="${i}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
         </div>
         </div>`
@@ -60,7 +60,7 @@ function shownotes() {
             ;color:white">
         <div class="card-body">
         <h5 class="card-title">${notesObj[i]}</h5>
-        <pre class="card-text">${notesObj[i + 1]}</pre>
+        <pre class="card-text" style="overflow-x:hidden;">${notesObj[i + 1]}</pre>
         <button id="${i}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
         </div>
         </div>`
@@ -76,7 +76,7 @@ function shownotes() {
     else noteselem.innerHTML = ` <div class="card" id="Note">
     <div class="card-body">
     <h5 class="card-title">You have no note added.</h5>
-    <pre class="card-text">Please click the following button to try your first note. Just add title and text you want and press the button Add note to save your first note or else click the following button to start with you first note.</pre>
+    <pre class="card-text" style="overflow-x:hidden">Please click the following button to try your first note. Just add title and text you want and press the button Add note to save your first note or else click the following button to start with you first note.</pre>
     <a href="#" class="btn btn-primary">Get Started</a>
     </div>
     </div>`
