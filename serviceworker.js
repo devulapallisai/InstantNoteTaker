@@ -7,6 +7,8 @@ const assets = [
   "/Suggest.html",
   "css/style.css",
   "css/styleabout.css",
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+  "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap",
   "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css",
   "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js",
   "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js",
