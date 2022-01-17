@@ -1,0 +1,31 @@
+{
+   "name":"Instantnotetaker - place where you take instant notes",
+   "short_name":"InstantNotes",
+   "description":"An Instant Note taking web-app",
+   "start_url":"/",
+   "display":"standalone",
+   "background_color":"orange",
+   "theme_color":"orange",
+   "orientation":"landscape",
+   "scope":"./",
+   "icons":[
+      {
+         "src":"./icon60.png",
+         "sizes":"60x60",
+         "type":"image/png",
+         "purpose":"maskable"
+      },
+      {
+         "src":"./icon100.png",
+         "sizes":"100x100",
+         "type":"image/png",
+         "purpose":"maskable"
+      },
+      {
+         "src":"./icon144.png",
+         "sizes":"144x144",
+         "type":"image/png",
+         "purpose":"any"
+      }
+   ]
+}

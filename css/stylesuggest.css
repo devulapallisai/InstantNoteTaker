@@ -84,3 +84,8 @@ body
     text-align:center;
     font-weight: bold;
 }
+button,i{
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}

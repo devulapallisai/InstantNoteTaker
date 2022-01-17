@@ -1,97 +1,89 @@
-body
-{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
-.navbar
-{
-    font-family: 'Baloo Bhai 2', cursive;
+.navbar {
+  font-family: "Baloo Bhai 2", cursive;
 }
 /* Setting color of Navbar text white and making it transition from white to red using hover property  */
-.H{
-    color:rgb(250, 249, 249);
-    transition:color 1s ease-in-out .2s;
+.H {
+  color: rgb(250, 249, 249);
+  transition: color 1s ease-in-out 0.2s;
 }
-.H:hover
-{
-    color:rgb(255, 44, 44);
-    text-decoration:underline;
+.H:hover {
+  color: rgb(255, 44, 44);
+  text-decoration: underline;
 }
-.logo{
-    width:50px;
-    margin-right: 60px;
+.logo {
+  width: 50px;
+  margin-right: 60px;
 }
 /* Setting the navbar same as the home page instead just deleting search option as it is not required*/
 
-.back::before{
-    content:"";
-    top:4vh;
-    left:0;
-    position: absolute;
-    background:url('../attachments/ba.jpg') no-repeat center center/cover;
-    opacity: 0.5;
-    width:100%;
-    height:100%;
-    z-index: -1;
-
+.back::before {
+  content: "";
+  top: 4vh;
+  left: 0;
+  position: absolute;
+  background: url("../attachments/ba.jpg") no-repeat center center/cover;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 /* Here before back (class consisting of images) to make opacity of the background image less without making the font and text dull using reduced opacity I used pseudo selector before and inserted it with dummy content "" and introduced background image there.*/
-.information
-{
-    padding-top: 10vh;
-    color:rgb(0, 0, 0);
-    padding-bottom: 10vh;
-    font-weight: bold;
+.information {
+  padding-top: 10vh;
+  color: rgb(0, 0, 0);
+  padding-bottom: 10vh;
+  font-weight: bold;
 }
-@media only screen and (min-width:750px) {
-    .Info
-    {
-      justify-content: center;
-      display: flex;
-    }
-    .card img
-    {
-      width:24vw;
-      height:45vh;
-    }
+@media only screen and (min-width: 750px) {
+  .Info {
+    justify-content: center;
+    display: flex;
+  }
+  .card img {
+    width: 24vw;
+    height: 45vh;
+  }
 }
-@media only screen and (max-width:750px) {
-    .card
-    {
-        margin-top: 1vh;
-    }
-    .Info
-    {
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-    }
+@media only screen and (max-width: 750px) {
+  .card {
+    margin-top: 1vh;
+  }
+  .Info {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
-.footer
-{
-    width:100%;
-    height:60vh;
-    background-color: black;
+.footer {
+  width: 100%;
+  height: 60vh;
+  background-color: black;
 }
-.footer h3
-{
-    color:#48BACA;
+.footer h3 {
+  color: #48baca;
 }
-.Last
-{
-    padding-top: 4vh;
+.Last {
+  padding-top: 4vh;
 }
-.footer li
-{
-    padding:2vh;
-    list-style: none;
+.footer li {
+  padding: 2vh;
+  list-style: none;
 }
-.footer li img
-{
-    margin-right: 4vw;
+.footer li img {
+  margin-right: 4vw;
 }
 
-.footer li a{
-    list-style: none;
-    text-decoration: none;
-    color:cornsilk;
+.footer li a {
+  list-style: none;
+  text-decoration: none;
+  color: cornsilk;
+}
+button,
+i {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }

@@ -241,3 +241,8 @@ body
     color: rgba(29, 212, 236, 0.911);
     text-decoration: underline;
 }
+button,i{
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
